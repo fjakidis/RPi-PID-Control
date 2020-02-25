@@ -13,6 +13,10 @@ class encoder(object):
    def _increment(self):
 	self._value += 1
 
-@property
-   def value(self:
+   def value(self):
 	return self._value
+
+
+enc = encoder(17)
+while True:
+	print('N = {}\r'.format(enc.value()))
